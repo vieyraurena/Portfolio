@@ -1,0 +1,9 @@
+.container-navegation {
+  flex-direction: row;
+  justify-content: space-between;
+  width: calculateWidth(150px);
+
+  &:last-child {
+    text-decoration: line-through;
+  }
+}

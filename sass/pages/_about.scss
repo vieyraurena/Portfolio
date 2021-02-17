@@ -1,0 +1,24 @@
+.container-bio {
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: baseline;
+  margin-top: 40px;
+  margin-bottom: 170px;
+  width: 100%;
+  
+  h1 {
+    flex: 1 1 auto;
+  }
+  
+  div {
+    width: calculateWidth(612px);
+    flex: 0 1 auto;
+  }
+}
+
+.list {
+  font-family: $paragraf;
+  font-size: $main-size;
+  line-height: $line-height-medium;
+  text-transform: capitalize;
+}

@@ -333,7 +333,8 @@ h2 {
 h3 {
   font-size: 1.125rem;
   font-weight: lighter;
-  letter-spacing: 0.625rem; }
+  letter-spacing: 0.3125rem;
+  padding-left: 50px; }
 
 p {
   font-family: "montserrat";
@@ -349,7 +350,8 @@ a {
     color: #2E807A; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  padding-left: 50px; }
 
 button {
   outline: none; }
@@ -370,6 +372,13 @@ button {
     font-family: "poppins";
     padding: 14px;
     text-transform: capitalize; }
+
+.container-navegation {
+  flex-direction: row;
+  justify-content: space-between;
+  width: 13.88889%; }
+  .container-navegation:last-child {
+    text-decoration: line-through; }
 
 form {
   flex-direction: row;
@@ -545,7 +554,7 @@ textarea {
   width: 100%; }
 
 .main-box {
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
   justify-content: space-between;
   padding: 60px; }
@@ -575,6 +584,25 @@ textarea {
     -webkit-transform: scale(1.3);
     -o-transform: scale(1.3); }
 
+.container-bio {
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: baseline;
+  margin-top: 40px;
+  margin-bottom: 170px;
+  width: 100%; }
+  .container-bio h1 {
+    flex: 1 1 auto; }
+  .container-bio div {
+    width: 56.66667%;
+    flex: 0 1 auto; }
+
+.list {
+  font-family: "montserrat";
+  font-size: 1rem;
+  line-height: 1.875rem;
+  text-transform: capitalize; }
+
 @media (max-width: 1023px) {
   h1 {
     font-size: 1.66667rem; }
@@ -583,7 +611,7 @@ textarea {
   h3 {
     font-size: calculateReMovil(16px);
     font-weight: lighter;
-    letter-spacing: 0.625rem; }
+    letter-spacing: 0.3125rem; }
   p {
     font-size: 1rem;
     line-height: 1.66667rem; }
