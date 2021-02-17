@@ -47,12 +47,12 @@
 
 .scroll {
   writing-mode: vertical-lr;
+  scroll-behavior: smooth;
 }
 
 // my service
-
 .title {
-  margin-top: 230px;
+  margin-top: 200px;
   margin-bottom: 40px;
 }
 
@@ -65,17 +65,22 @@
   align-items: flex-start;
   flex-direction: row;
   justify-content: space-between;
-  padding: 60px;
+  padding: 20px;
 }
 
 .content-box  {
   flex-direction: column;
-  margin-right: $gutter;
+  padding: 0 20px;
+  text-align: center;
   width: calculateWidth(290px);
   
   img {
     max-width: 100%;
     width: 100%;
+  }
+
+  h3 {
+    padding: 0;
   }
 }
 
@@ -86,7 +91,7 @@
   transition: all .5s cubic-bezier(.77,0,.175,1);
 }
 
-
+// animacion zoom en img service
 .zoom {
   transition: width 1s, height 1s, transform 1s;
  -moz-transition: width 1s, height 1s, transform 1s;
@@ -101,6 +106,15 @@
  }
 }
 
+// gihub activity
+.git {
+  margin-top: 100px;
+}
+
+.container-git {
+  width: 500px;
+  height: 500px;
+}
 
 // .contenedor:hover .imagen {-webkit-transform:scale(1.3);transform:scale(1.3);}
 // .contenedor {overflow:hidden;}

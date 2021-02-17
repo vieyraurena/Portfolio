@@ -1,9 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  margin: 0;
   background-color: $main-background;
 }
 
 .wrapper {
-  max-width: 1080px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -28,6 +33,7 @@ h1 {
 
 h2 {
   font-size: $large-size;
+  padding-top: 80px;
 }
 
 h3 {
