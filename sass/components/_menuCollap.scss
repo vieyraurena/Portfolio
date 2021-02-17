@@ -1,0 +1,49 @@
+.menu-collapse{
+  background-color: $fourth-color;
+  display: none;
+  left: 0;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+}
+
+.exit {
+  background-color: $border;
+  border: none;
+  color: $main-background;
+  cursor: pointer;
+  font-family: $links;
+  font-size: $maxim-size;
+  font-weight: bold;
+  margin-left: 1200px;
+  margin-top: 60px;
+
+}
+
+.content-menu {
+  justify-content: center;
+  padding: 250px 0 300px 0;
+  li {
+    list-style: none;
+  }
+
+  a {
+    color: $main-background;
+    display: block;
+    font-size: $large-size;
+    line-height: $line-height-large;
+    text-transform: capitalize;
+
+    &:hover {
+      color: $paragraf-color;
+    }
+  }
+
+}
+
+/*clases para usar con JS*/
+.visible {
+  display: block;
+}

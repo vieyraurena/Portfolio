@@ -1,1 +1,29 @@
+// Base
+@import 'library/normalize';
+@import 'library/type.scss';
 
+
+// Utilities
+@import 'utilities/functions';
+@import 'utilities/variables';
+@import 'utilities/mixin';
+
+// Layout
+@import 'layout/globals';
+@import 'layout/header';
+@import 'layout/navegation';
+@import 'layout/forms.scss';
+@import 'layout/footer';
+
+// components
+@import 'components/menuCollap';
+@import 'components/comments';
+@import 'components/buttom';
+
+// Pages
+@import 'pages/home';
+@import 'pages/about';
+
+// breakpoints 
+@import 'breakpoints/tablet';
+@import 'breakpoints/movil';

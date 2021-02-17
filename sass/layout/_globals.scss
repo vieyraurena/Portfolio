@@ -1,0 +1,62 @@
+body {
+  background-color: $main-background;
+}
+
+.wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h1, h2, h3, h4 {
+  font-family: $titles;
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: $maxim-size;
+}
+
+h2 {
+  font-size: $large-size;
+}
+
+h3 {
+  font-size: $medium-size;
+  font-weight: lighter;
+  letter-spacing: $letter-space-small;
+}
+
+p {
+  font-family: $paragraf;
+  font-size: $main-size;
+  line-height: $line-height-medium;
+}
+
+a {
+  color: $paragraf-color;
+  font-family: $links;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover {
+    color: $click;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  outline: none;
+}
