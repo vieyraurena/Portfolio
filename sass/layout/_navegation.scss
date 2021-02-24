@@ -1,9 +1,14 @@
 .container-navegation {
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 50px;
   width: calculateWidth(150px);
 
-  &:last-child {
-    text-decoration: line-through;
+  a {
+    &:last-child {
+      text-decoration: line-through;
+      color: $click;
+    }
+    
   }
 }
