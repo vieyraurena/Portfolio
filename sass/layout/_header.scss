@@ -1,26 +1,25 @@
 .nav {
-  align-content: center;
+  align-items: center;
+  background-color: $background;
   justify-content: space-between;
-  padding: 32px 0;
-  
-  img {
-    max-width: 100%;
-    width: 100%;
-  }
-  // position: fixed;
-  // top: 0;
-  // z-index: 999;
-  // display: block;
+  left: 0;
+  padding: 12px 62px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
 
-  button {
-    background-color: $menu;
-    border: none;
-    border-radius: 80px;
-    color: $main-background;
-    cursor: pointer;
-    font-family: $bottoms;
-    padding: 14px;
-    text-transform: capitalize;
+.nav-logo {
+  position: relative;
+  left: unset;
+  right: unset;
+}
+
+.nav-menu-items {
+  li {
+    display: inline-block;
+    padding: 10px 20px;
   }
 }
 

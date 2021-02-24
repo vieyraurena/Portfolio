@@ -350,7 +350,8 @@ a {
   color: #1C1C1C;
   font-family: "poppins";
   font-weight: bold;
-  text-decoration: none; }
+  text-decoration: none;
+  text-transform: capitalize; }
   a:hover {
     color: #045a54; }
 
@@ -362,21 +363,24 @@ button {
   outline: none; }
 
 .nav {
-  align-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
   justify-content: space-between;
-  padding: 32px 0; }
-  .nav img {
-    max-width: 100%;
-    width: 100%; }
-  .nav button {
-    background-color: #1C1C1C;
-    border: none;
-    border-radius: 80px;
-    color: #FFFFFF;
-    cursor: pointer;
-    font-family: "poppins";
-    padding: 14px;
-    text-transform: capitalize; }
+  left: 0;
+  padding: 12px 62px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999; }
+
+.nav-logo {
+  position: relative;
+  left: unset;
+  right: unset; }
+
+.nav-menu-items li {
+  display: inline-block;
+  padding: 10px 20px; }
 
 .container-navegation {
   flex-direction: row;
@@ -446,44 +450,6 @@ textarea {
   .rights span {
     font-size: 0.875rem; }
 
-.menu-collapse {
-  background-color: #E7928A;
-  display: none;
-  left: 0;
-  position: absolute;
-  position: fixed;
-  top: 0;
-  width: 100%; }
-
-.exit {
-  background-color: #E7928A;
-  border: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-family: "poppins";
-  font-size: 2rem;
-  font-weight: bold;
-  margin-left: 1200px;
-  margin-top: 60px; }
-
-.content-menu {
-  justify-content: center;
-  padding: 250px 0 300px 0; }
-  .content-menu li {
-    list-style: none; }
-  .content-menu a {
-    color: #FFFFFF;
-    display: block;
-    font-size: 1.5rem;
-    line-height: 3.125rem;
-    text-transform: capitalize; }
-    .content-menu a:hover {
-      color: #1C1C1C; }
-
-/*clases para usar con JS*/
-.visible {
-  display: block; }
-
 .green {
   background-color: #B3D8CB;
   width: 100%; }
@@ -515,7 +481,7 @@ textarea {
   text-transform: uppercase; }
 
 .main-content {
-  margin-top: 100px; }
+  margin-top: 220px; }
 
 .photo {
   width: 49.25926%;
@@ -548,11 +514,12 @@ textarea {
   justify-content: flex-end; }
 
 .scroll {
+  margin-top: 80px;
   writing-mode: vertical-lr;
   scroll-behavior: smooth; }
 
 .title {
-  margin-top: 200px;
+  margin-top: 100px;
   margin-bottom: 40px; }
 
 .gray {
