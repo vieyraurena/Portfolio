@@ -1,5 +1,5 @@
 .main-content {
-  margin-top: 220px;
+  margin-top: 13.5rem;
 }
 
 .photo {
@@ -14,11 +14,11 @@
 .redes {
   float: left;
   margin-right: $gutter;
-  padding: 0 25px;
+  padding: 0 1.5rem;
   width: 2%;
   
   img {
-    margin-bottom: 21px;
+    margin-bottom: 1.3rem;
   }
   
   .line {
@@ -32,11 +32,11 @@
 
   h1 {
     text-transform: uppercase;
-    padding-top: 30px;
+    padding-top: 1.9rem;
   }
 
   p {
-    margin-bottom: 100px;
+    margin-bottom: 6.3rem;
   }
 }
 
@@ -46,15 +46,15 @@
 }
 
 .scroll {
-  margin-top: 50px;
+  margin-top: 3rem;
   writing-mode: vertical-lr;
   scroll-behavior: smooth;
 }
 
 // my service
 .title {
-  margin-top: 100px;
-  margin-bottom: 40px;
+  margin-top: 6.3rem;
+  margin-bottom: 2.5rem;
 }
 
 .gray {
@@ -66,12 +66,12 @@
   align-items: flex-start;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px;
+  padding: 1.3rem;
 }
 
 .content-box  {
   flex-direction: column;
-  padding: 0 20px;
+  padding: 0 1.3rem;
   text-align: center;
   width: calculateWidth(290px);
   
@@ -109,7 +109,7 @@
 
 // gihub activity
 .git {
-  margin-top: 100px;
+  margin-top: 6.3rem;
 }
 
 .container-git {

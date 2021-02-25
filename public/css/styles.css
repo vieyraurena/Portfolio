@@ -333,13 +333,13 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  padding-top: 80px; }
+  padding-top: 5rem; }
 
 h3 {
   font-size: 1.125rem;
   font-weight: lighter;
   letter-spacing: 0.3125rem;
-  padding-left: 50px; }
+  padding-left: 3rem; }
 
 p {
   font-family: "montserrat";
@@ -357,7 +357,7 @@ a {
 
 ul {
   list-style: none;
-  padding-left: 50px; }
+  padding-left: 3rem; }
 
 button {
   outline: none; }
@@ -367,7 +367,7 @@ button {
   background-color: #FFFFFF;
   justify-content: space-between;
   left: 0;
-  padding: 12px 62px;
+  padding: 0.8rem 4rem;
   position: fixed;
   right: 0;
   top: 0;
@@ -380,12 +380,12 @@ button {
 
 .nav-menu-items li {
   display: inline-block;
-  padding: 10px 20px; }
+  padding: 0.8rem 1.2rem; }
 
 .container-navegation {
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 3rem;
   width: 13.88889%; }
   .container-navegation a:last-child {
     text-decoration: line-through;
@@ -414,16 +414,15 @@ input, textarea {
   outline: none; }
 
 textarea {
-  height: 40px; }
+  height: 2.5rem; }
 
 .form h2 {
-  margin-top: 100px; }
+  margin-top: 6.3rem; }
 
 .shape {
   position: absolute;
   right: 0;
-  margin-top: 100px;
-  z-index: -1; }
+  margin-top: 6.3rem; }
 
 .black {
   background-color: #1C1C1C;
@@ -490,30 +489,30 @@ textarea {
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  padding: 40px 0px; }
+  padding: 2.5rem 0rem; }
 
 .comments {
   margin-right: 1.85185%;
   width: 20.37037%; }
   .comments .clound {
     background-color: #FFFFFF;
-    border-radius: 10px;
-    padding: 30px; }
+    border-radius: 0.8rem;
+    padding: 1.9rem; }
 
 .submit {
   background-color: #045a54;
   border: none;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   color: #FFFFFF;
   cursor: pointer;
   flex: 0 1 auto;
   font-family: "poppins";
   justify-content: flex-end;
-  padding: 10px 16px;
+  padding: 0.6rem 1rem;
   text-transform: uppercase; }
 
 .main-content {
-  margin-top: 220px; }
+  margin-top: 13.5rem; }
 
 .photo {
   width: 49.25926%;
@@ -525,10 +524,10 @@ textarea {
 .redes {
   float: left;
   margin-right: 1.85185%;
-  padding: 0 25px;
+  padding: 0 1.5rem;
   width: 2%; }
   .redes img {
-    margin-bottom: 21px; }
+    margin-bottom: 1.3rem; }
   .redes .line {
     padding-left: 35%; }
 
@@ -537,22 +536,22 @@ textarea {
   width: 40.74074%; }
   .content h1 {
     text-transform: uppercase;
-    padding-top: 30px; }
+    padding-top: 1.9rem; }
   .content p {
-    margin-bottom: 100px; }
+    margin-bottom: 6.3rem; }
 
 .container-scroll {
   flex-direction: column;
   justify-content: flex-end; }
 
 .scroll {
-  margin-top: 50px;
+  margin-top: 3rem;
   writing-mode: vertical-lr;
   scroll-behavior: smooth; }
 
 .title {
-  margin-top: 100px;
-  margin-bottom: 40px; }
+  margin-top: 6.3rem;
+  margin-bottom: 2.5rem; }
 
 .gray {
   background-color: #f7f6f2;
@@ -562,11 +561,11 @@ textarea {
   align-items: flex-start;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px; }
+  padding: 1.3rem; }
 
 .content-box {
   flex-direction: column;
-  padding: 0 20px;
+  padding: 0 1.3rem;
   text-align: center;
   width: 26.85185%; }
   .content-box img {
@@ -593,7 +592,7 @@ textarea {
     -o-transform: scale(1.1); }
 
 .git {
-  margin-top: 100px; }
+  margin-top: 6.3rem; }
 
 .container-git {
   width: 500px;
@@ -604,8 +603,8 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
   justify-content: center;
-  margin-top: 50px;
-  padding: 200px 0;
+  margin-top: 3rem;
+  padding: 12.5rem 0;
   text-align: center;
   line-height: 3.125rem; }
 
@@ -613,7 +612,7 @@ textarea {
   align-items: baseline;
   flex-flow: row nowrap;
   justify-content: flex-end;
-  margin-top: 40px;
+  margin-top: 2.5rem;
   width: 100%; }
   .container-bio h1 {
     flex: 1 1 auto; }
@@ -631,11 +630,11 @@ textarea {
   text-transform: capitalize; }
 
 .shadow {
-  border-radius: 8px;
+  border-radius: 0.5rem;
   box-shadow: 0px 0px 16px -4px #dddbdb; }
 
 .soft {
-  padding-bottom: 90px; }
+  padding-bottom: 5.6rem; }
 
 @media (max-width: 1023px) {
   h1 {
