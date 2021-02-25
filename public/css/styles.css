@@ -433,27 +433,39 @@ input, textarea {
   color: #FFFFFF;
   font-family: "montserrat";
   font-size: 1rem;
-  margin-top: 160px; }
-  .black a {
-    color: #FFFFFF;
-    font-family: "montserrat";
-    font-weight: lighter; }
+  margin-top: 160px;
+  flex-direction: row; }
 
 .container-footer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 0 1rem 0; }
+  .container-footer .scroll {
+    color: #FFFFFF;
+    align-self: flex-end; }
+
+.email {
+  margin-top: 1.3rem; }
+  .email a {
+    color: #FFFFFF;
+    font-family: "montserrat";
+    font-weight: lighter;
+    text-transform: lowercase; }
+    .email a:hover {
+      color: #E7928A; }
+
+.footer-redes {
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  padding: 30px; }
-  .container-footer li {
-    line-height: 1.875rem; }
-  .container-footer a:hover {
-    color: #E7928A; }
-
-.rights {
-  justify-content: space-between;
-  align-items: flex-end; }
-  .rights span {
-    font-size: 0.875rem; }
+  padding-top: 1.3rem; }
+  .footer-redes ul {
+    padding: 0; }
+  .footer-redes li {
+    align-items: center;
+    justify-content: flex-end;
+    display: inline-block;
+    padding: 0rem 1.2rem; }
 
 #preloader5 {
   margin: 0 auto;

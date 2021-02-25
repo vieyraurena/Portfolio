@@ -4,34 +4,46 @@
   font-family: $paragraf;
   font-size: $main-size;
   margin-top: 160px;
+  flex-direction: row;
+}
+
+.container-footer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 0 1rem 0;
   
+  .scroll {
+    color: $main-background;
+    align-self: flex-end;
+  }
+}
+
+.email {
+  margin-top: 1.3rem;
   a {
     color: $main-background;
     font-family: $paragraf;
     font-weight: lighter;
+    text-transform: lowercase;
+
+    &:hover {
+      color: $border;
+    }
   }
 }
 
-.container-footer {
+.footer-redes {
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  padding: 30px;
-
+  padding-top: 1.3rem;
+  ul {
+    padding: 0;
+  }
   li {
-    line-height: $line-height-medium;
-  }
-
-  a:hover {
-    color: $border;
-  }
-}
-
-.rights {
-  justify-content: space-between;
-  align-items: flex-end;
-
-  span {
-    font-size: $small-size;
+    align-items: center;
+    justify-content: flex-end;
+    display: inline-block;
+    padding: 0rem 1.2rem;
   }
 }
