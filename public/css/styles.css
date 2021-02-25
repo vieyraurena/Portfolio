@@ -391,9 +391,11 @@ button {
     text-decoration: line-through;
     color: #045a54; }
 
+.contact-background {
+  background-color: #FFFFFF; }
+
 form {
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   font-size: 0.875rem;
   width: 57.77778%; }
 
@@ -402,21 +404,23 @@ label {
   font-family: "poppins";
   text-transform: capitalize;
   color: #4F4F4F;
-  padding-bottom: 20px; }
+  padding-bottom: 0.6rem; }
 
 input, textarea {
   flex: 1 1 100%;
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid #E7928A;
+  background-color: #FFFFFF;
+  border: 0.1px solid #c4c4c4;
+  border-radius: 0.2rem;
   font-family: "montserrat";
-  margin-bottom: 20px;
-  outline: none; }
-
-textarea {
-  height: 2.5rem; }
+  margin-bottom: 1rem;
+  outline: none;
+  padding: 0.5rem 0.5rem; }
+  input::placeholder, textarea::placeholder {
+    color: #c4c4c4;
+    font-size: 0.8rem; }
 
 .form h2 {
+  font-size: 2.625rem;
   margin-top: 6.3rem; }
 
 .shape {
@@ -500,6 +504,7 @@ textarea {
     padding: 1.9rem; }
 
 .submit {
+  align-self: flex-end;
   background-color: #045a54;
   border: none;
   border-radius: 0.5rem;
@@ -507,7 +512,6 @@ textarea {
   cursor: pointer;
   flex: 0 1 auto;
   font-family: "poppins";
-  justify-content: flex-end;
   padding: 0.6rem 1rem;
   text-transform: uppercase; }
 

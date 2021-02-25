@@ -1,6 +1,9 @@
+.contact-background {
+  background-color: $main-background;
+}
+
 form {
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   font-size: $small-size;
   width: calculateWidth(624px);
 }
@@ -10,26 +13,29 @@ label {
   font-family:$titles;
   text-transform: capitalize;
   color: #4F4F4F;
-  padding-bottom: 20px;
+  padding-bottom: 0.6rem;
 }
 
 input, textarea {
   flex: 1 1 100%;
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid $fourth-color;
+  background-color: $main-background;
+  border: 0.1px solid #c4c4c4;
+  border-radius: 0.2rem;
   font-family:$paragraf;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
   outline: none;
+  padding: 0.5rem 0.5rem;
+
+  &::placeholder{
+    color: #c4c4c4;
+    font-size: 0.8rem;
+  }
 }
 
-
-textarea {
-  height: 2.5rem;
-}
 
 .form {
   h2 {
+    font-size: $maxim-size-form;
     margin-top: 6.3rem;
   }
 }
@@ -39,3 +45,4 @@ textarea {
   right: 0;
   margin-top: 6.3rem;
 }
+
