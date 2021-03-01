@@ -17,10 +17,10 @@ label {
 }
 
 input, textarea {
-  flex: 1 1 100%;
   background-color: $main-background;
   border: 0.1px solid #c4c4c4;
   border-radius: 0.2rem;
+  flex: 1 1 100%;
   font-family:$paragraf;
   margin-bottom: 1rem;
   outline: none;

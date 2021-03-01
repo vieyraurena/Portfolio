@@ -8,8 +8,11 @@
 @import 'utilities/variables';
 @import 'utilities/mixin';
 
+//partials
+@import 'partials/globals';
+@import 'partials/helpers';
+
 // Layout
-@import 'layout/globals';
 @import 'layout/header';
 @import 'layout/navegation';
 @import 'layout/forms.scss';
@@ -23,7 +26,7 @@
 // Pages
 @import 'pages/home';
 @import 'pages/about';
-@import 'pages/contact';
+@import 'pages/webDesign';
 
 // breakpoints 
 @import 'breakpoints/tablet';
