@@ -8,37 +8,46 @@ $links: $main-font;
 $paragraf: $secondary-font;
 
 // size
-$small-size: calculateRem(14px);
-$main-size: calculateRem(16px);
-$medium-size: calculateRem(18px);
-$large-size: calculateRem(24px);
-$maxim-size: calculateRem(32px);
-$letter-space-small: calculateRem(5px);
-$line-height-medium: calculateRem(30px);
-$line-height-large: calculateRem(50px);
+
+
+$small-size: 0.875rem;
+$main-size: 1rem;
+$medium-size: 1.125rem;
+$large-size: 1.5rem;
+$maxim-size: 2rem;
+$maxim-size-form: 2.6rem;
+
+// letter-space
+$letter-space-small: 0.3rem;
+
+//line-height
+$line-height-medium: 1.8rem;
+$line-height-large: 3.2rem;
 
 // gutter
 $gutter: calculateWidth(20px);
 
 // color
 $main-color: #1C1C1C;
-$third-color: #2E807A;
 $fourth-color: #E7928A;
-
-$third-color-hover:#045a54;
+$third-color:#045a54;
 
 $paragraf-color: $main-color;
 $menu: $main-color;
-$click: $third-color-hover;
+$click: $third-color;
 $border: $fourth-color;
 
 
-// background
-$main-background: #FFFFFF;
-$secondary-background: #f7f6f2;
-$third-background: #B3D8CB;
-$fourth-background: #EDCCC3;
+// backgrounds
+$main: #FFFFFF;
+$gray: #f7f6f2;
+$third: #B3D8CB;
+$fourth: #EDCCC3;
 
+$main-background: $main;
+$secondary-background: $gray;
+$third-background: $third;
+$fourth-background: $fourth;
 
 // size MOVIL
 $small-size-movil: calculateRemMovil(10px);

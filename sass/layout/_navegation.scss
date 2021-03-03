@@ -1,9 +1,22 @@
 .container-navegation {
   flex-direction: row;
   justify-content: space-between;
-  width: calculateWidth(150px);
+  margin: 3rem 6rem;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 999;
 
-  &:last-child {
-    text-decoration: line-through;
+  a {
+    color: $click;
+    &:last-child {
+      text-decoration: line-through;
+    }
   }
+}
+
+.scroll {
+  margin-top: 4rem;
+  writing-mode: vertical-lr;
+  scroll-behavior: smooth;
 }

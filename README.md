@@ -1,9 +1,8 @@
 # PORTFOLIO
 
-## Creative Process
 
-<div align="center">
-<a href="https://ibb.co/Yfs7ScY"><img src="https://i.ibb.co/ssYv4Kk/tomas.jpg" alt="tomas" border="0" width="100%" height="auto"></a>
-</div> 
+##  Cambios realizados por el feedback: 
+* En ves de usar functions para el font-size, uso sólo variables.
+* Aplicar buenas prácticas en el uso de carpetas
+* Usar span en ves de br
 
-* The other information is in the CreativeProcess.

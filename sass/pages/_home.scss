@@ -1,5 +1,5 @@
 .main-content {
-  margin-top: 100px;
+  margin-top: 13.5rem;
 }
 
 .photo {
@@ -14,11 +14,11 @@
 .redes {
   float: left;
   margin-right: $gutter;
-  padding: 0 25px;
+  padding: 0 1.5rem;
   width: 2%;
   
   img {
-    margin-bottom: 21px;
+    margin-bottom: 1.3rem;
   }
   
   .line {
@@ -32,11 +32,11 @@
 
   h1 {
     text-transform: uppercase;
-    padding-top: 30px;
+    padding-top: 1.9rem;
   }
 
   p {
-    margin-bottom: 100px;
+    margin-bottom: 6.3rem;
   }
 }
 
@@ -45,32 +45,33 @@
   justify-content: flex-end;
 }
 
-.scroll {
-  writing-mode: vertical-lr;
+.scroll-index {
+  margin: 4rem 6rem;
+  justify-content: flex-end;
   scroll-behavior: smooth;
 }
 
 // my service
 .title {
-  margin-top: 200px;
-  margin-bottom: 40px;
+  margin-top: 6rem;
+  margin-bottom: 2.5rem;
 }
 
-.gray {
-  background-color: $secondary-background;
-  width: 100%;
-}
+// .gray {
+//   background-color: $secondary-background;
+//   width: 100%;
+// }
 
 .main-box {
   align-items: flex-start;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px;
+  padding: 1.3rem;
 }
 
 .content-box  {
   flex-direction: column;
-  padding: 0 20px;
+  padding: 0 1.3rem;
   text-align: center;
   width: calculateWidth(290px);
   
@@ -104,16 +105,6 @@
   -webkit-transform : scale(1.1);
   -o-transform : scale(1.1);
  }
-}
-
-// gihub activity
-.git {
-  margin-top: 100px;
-}
-
-.container-git {
-  width: 500px;
-  height: 500px;
 }
 
 // .contenedor:hover .imagen {-webkit-transform:scale(1.3);transform:scale(1.3);}

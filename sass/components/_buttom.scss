@@ -1,12 +1,12 @@
 .submit {
+  align-self: flex-end;
   background-color: $click;
   border: none;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   color: $main-background;
   cursor: pointer;
   flex: 0 1 auto;
   font-family: $bottoms;
-  justify-content: flex-end;
-  padding: 10px 16px;
+  padding: 0.6rem 1rem;
   text-transform: uppercase;
 }

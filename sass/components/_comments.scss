@@ -9,7 +9,7 @@
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  padding: 40px 0px;
+  padding: 2.5rem 0rem;
 }
 
 .comments {
@@ -17,7 +17,7 @@
   width: calculateWidth(220px);
   .clound {
     background-color: $main-background;
-    border-radius: 10px;
-    padding: 30px;
+    border-radius: 0.8rem;
+    padding: 1.9rem;
   }
 }
