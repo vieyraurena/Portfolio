@@ -1,0 +1,37 @@
+.black {
+  background-color: $paragraf-color;
+  color: $main-background;
+  font-family: $paragraf;
+  font-size: $main-size;
+  margin-top: 160px;
+  
+  a {
+    color: $main-background;
+    font-family: $paragraf;
+    font-weight: lighter;
+  }
+}
+
+.container-footer {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+
+  li {
+    line-height: $line-height-medium;
+  }
+
+  a:hover {
+    color: $border;
+  }
+}
+
+.rights {
+  justify-content: space-between;
+  align-items: flex-end;
+
+  span {
+    font-size: $small-size;
+  }
+}

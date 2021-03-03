@@ -1,0 +1,70 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: $main-background;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h1, h2, h3, h4 {
+  font-family: $titles;
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: $maxim-size;
+}
+
+h2 {
+  font-size: $large-size;
+  padding-top: 80px;
+}
+
+h3 {
+  font-size: $medium-size;
+  font-weight: lighter;
+  letter-spacing: $letter-space-small;
+  padding-left: 50px;
+}
+
+p {
+  font-family: $paragraf;
+  font-size: $main-size;
+  line-height: $line-height-medium;
+}
+
+a {
+  color: $paragraf-color;
+  font-family: $links;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover {
+    color: $click;
+  }
+}
+
+ul {
+  list-style: none;
+  padding-left: 50px;
+}
+
+button {
+  outline: none;
+}

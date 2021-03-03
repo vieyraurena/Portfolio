@@ -1,0 +1,46 @@
+@media (max-width: 767px) {
+  .nav {
+    padding: 10px 0;
+  }
+
+
+  .photo {
+    float: none;
+    margin: 0px 100px 0 100px;
+    width: calculateWidthMovil(500px);
+  }
+
+  .content {
+    margin-right: $gutter;
+    width: calculateWidthMovil(600px);
+    margin: 0 auto;
+  }
+
+  .content-box  {
+    width: calculateWidthMovil(290px);
+  }
+
+  .scroll {
+    float: none;
+    // position: absolute;
+    // right: 300px;
+  }
+
+  .main-box {
+    flex-direction: column;
+  }
+
+  .content-box  {
+    width: 50%;
+  }
+
+  .container-comments {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .comments {
+    width: calculateWidthMovil(400px);
+    padding-bottom: 20px;
+  }
+}

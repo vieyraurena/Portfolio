@@ -1,0 +1,56 @@
+// type
+$main-font: 'poppins';
+$secondary-font: 'montserrat';
+
+$titles: $main-font;
+$bottoms: $main-font;
+$links: $main-font;
+$paragraf: $secondary-font;
+
+// size
+$small-size: calculateRem(14px);
+$main-size: calculateRem(16px);
+$medium-size: calculateRem(18px);
+$large-size: calculateRem(24px);
+$maxim-size: calculateRem(32px);
+$letter-space-small: calculateRem(5px);
+$line-height-medium: calculateRem(30px);
+$line-height-large: calculateRem(50px);
+
+// gutter
+$gutter: calculateWidth(20px);
+
+// color
+$main-color: #1C1C1C;
+$third-color: #2E807A;
+$fourth-color: #E7928A;
+
+$third-color-hover:#045a54;
+
+$paragraf-color: $main-color;
+$menu: $main-color;
+$click: $third-color-hover;
+$border: $fourth-color;
+
+
+// background
+$main-background: #FFFFFF;
+$secondary-background: #f7f6f2;
+$third-background: #B3D8CB;
+$fourth-background: #EDCCC3;
+
+
+// size MOVIL
+$small-size-movil: calculateRemMovil(10px);
+$main-size-movil: calculateRemMovil(12px);
+$medium-size-movil: calculateReMovil(16px);
+$large-size-movil: calculateRemMovil(18px);
+$maxim-size-movil: calculateRemMovil(20px);
+$line-height-small-movil: calculateRemMovil(10px);
+$line-height-medium-movil: calculateRemMovil(20px);
+$line-height-large-movil: calculateRemMovil(40px);
+
+
+
+
+
