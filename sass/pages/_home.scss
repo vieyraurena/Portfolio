@@ -45,22 +45,22 @@
   justify-content: flex-end;
 }
 
-.scroll {
-  margin-top: 4rem;
-  writing-mode: vertical-lr;
+.scroll-index {
+  margin: 4rem 6rem;
+  justify-content: flex-end;
   scroll-behavior: smooth;
 }
 
 // my service
 .title {
-  margin-top: 6.3rem;
+  margin-top: 6rem;
   margin-bottom: 2.5rem;
 }
 
-.gray {
-  background-color: $secondary-background;
-  width: 100%;
-}
+// .gray {
+//   background-color: $secondary-background;
+//   width: 100%;
+// }
 
 .main-box {
   align-items: flex-start;
@@ -105,16 +105,6 @@
   -webkit-transform : scale(1.1);
   -o-transform : scale(1.1);
  }
-}
-
-// gihub activity
-.git {
-  margin-top: 6.3rem;
-}
-
-.container-git {
-  width: 500px;
-  height: 500px;
 }
 
 // .contenedor:hover .imagen {-webkit-transform:scale(1.3);transform:scale(1.3);}

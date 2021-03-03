@@ -1,13 +1,22 @@
 .container-navegation {
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 3rem;
-  width: calculateWidth(180px);
+  margin: 3rem 6rem;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 999;
 
   a {
+    color: $click;
     &:last-child {
       text-decoration: line-through;
-      color: $click;
     }
   }
+}
+
+.scroll {
+  margin-top: 4rem;
+  writing-mode: vertical-lr;
+  scroll-behavior: smooth;
 }

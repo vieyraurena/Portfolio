@@ -8,19 +8,21 @@ $links: $main-font;
 $paragraf: $secondary-font;
 
 // size
-$small-size: calculateRem(14px);
-$main-size: calculateRem(16px);
-$medium-size: calculateRem(18px);
-$large-size: calculateRem(24px);
-$maxim-size: calculateRem(32px);
-$maxim-size-form: calculateRem(42px);
+
+
+$small-size: 0.875rem;
+$main-size: 1rem;
+$medium-size: 1.125rem;
+$large-size: 1.5rem;
+$maxim-size: 2rem;
+$maxim-size-form: 2.6rem;
 
 // letter-space
-$letter-space-small: calculateRem(5px);
+$letter-space-small: 0.3rem;
 
 //line-height
-$line-height-medium: calculateRem(30px);
-$line-height-large: calculateRem(50px);
+$line-height-medium: 1.8rem;
+$line-height-large: 3.2rem;
 
 // gutter
 $gutter: calculateWidth(20px);

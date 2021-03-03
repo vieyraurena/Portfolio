@@ -13,10 +13,16 @@
   justify-content: center;
   padding: 2.5rem 0 1rem 0;
   
-  .scroll {
-    color: $main-background;
-    align-self: flex-end;
-  }
+}
+
+.footer-redes-scroll {
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+
+.scroll-footer {
+  color: $main-background;
+  writing-mode: vertical-lr;
 }
 
 .email {
@@ -46,4 +52,10 @@
     display: inline-block;
     padding: 0rem 1.2rem;
   }
+}
+
+
+.rights {
+  font-weight: lighter;
+  font-size: $small-size;
 }
