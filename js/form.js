@@ -10,7 +10,7 @@ const formValidation = () => {
   required.forEach((input) => {
     if (input.value === '') {
       input.classList.add('red');
-      warning.innerHTML = `Ocurrio un error, verifica los siguientes campos ${required}`; 
+      warning.innerHTML = 'Ocurrio un error, verifica los siguientes campos'; 
       h4.appendChild(warning); 
     } else {
       input.classList.remove('red');
