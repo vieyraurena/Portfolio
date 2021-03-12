@@ -9,13 +9,13 @@ check.innerHTML = '';
 const formValidation = () => {
   required.forEach((input) => {
     if (input.value === '') {
-      input.classList.add('red');
+      input.classList.add('js__red');
       warning.innerHTML = 'Ocurrio un error, verifica los siguientes campos'; 
       h4.appendChild(warning); 
     } else {
-      input.classList.remove('red');
+      input.classList.remove('js__red');
       check.innerHTML = 'Su formulario fue enviado';
-      check.classList.add('green');
+      check.classList.add('js__green');
       form.appendChild(check);
     }
   })

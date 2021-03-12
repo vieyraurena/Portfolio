@@ -1,4 +1,4 @@
-.container-navegation {
+.design__navegation {
   flex-direction: row;
   justify-content: space-between;
   margin: 3rem 6rem;
@@ -15,8 +15,21 @@
   }
 }
 
-.scroll {
+.design__scroll  {
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+
+.design__scroll--link {
   margin-top: 4rem;
   writing-mode: vertical-lr;
   scroll-behavior: smooth;
+}
+
+.design__scroll--decor {
+  display: flex;
+  align-items: center;
+  -webkit-transition: all .5s cubic-bezier(.77,0,.175,1);
+  transition: all .5s cubic-bezier(.77,0,.175,1);
 }

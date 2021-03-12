@@ -1,4 +1,4 @@
-.main-title {
+.design__title {
   background-image: url(../../img/circle.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -9,7 +9,7 @@
   line-height: $line-height-large;
 }
 
-.container-bio {
+.bio {
   align-items: baseline;
   flex-flow: row nowrap;
   justify-content: flex-end;
@@ -21,11 +21,34 @@
   }
 }
 
-.container-bio-conten {
+.bio__content {
   width: calculateWidth(650px);
 }
 
-.list {
+.skills {
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.3rem;
+}
+
+.skills__box {
+  flex-direction: column;
+  padding: 0 1.3rem;
+  text-align: center;
+  width: calculateWidth(290px);
+  
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  h3 {
+    padding: 0;
+  }
+}
+
+.skills__list {
   font-family: $paragraf;
   font-size: $main-size;
   flex-direction: column;
@@ -35,11 +58,24 @@
   text-transform: capitalize;
 }
 
-.shadow {
+.skills__shadow {
   border-radius: 0.5rem;
   box-shadow: 0px 0px 16px -4px rgb(221, 219, 219);
 }
 
-.soft {
+.skills__list--soft {
   padding-bottom: 5.6rem;
 }
+
+.scroll-index {
+  margin: 4rem 6rem;
+  justify-content: flex-end;
+  scroll-behavior: smooth;
+}
+
+// my service
+
+// .gray {
+//   background-color: $secondary-background;
+//   width: 100%;
+// }

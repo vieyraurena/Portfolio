@@ -8,7 +8,7 @@ form {
   width: calculateWidth(624px);
 }
 
-label {
+.form__label {
   flex: 1 1 100%;
   font-family:$titles;
   text-transform: capitalize;
@@ -16,7 +16,7 @@ label {
   padding-bottom: 0.6rem;
 }
 
-input, textarea {
+.form__input, .form__textarea {
   background-color: $main-background;
   border: 0.1px solid #c4c4c4;
   border-radius: 0.2rem;
@@ -25,22 +25,15 @@ input, textarea {
   margin-bottom: 1rem;
   outline: none;
   padding: 0.5rem 0.5rem;
-
-  &::placeholder{
-    color: #c4c4c4;
-    font-size: 0.8rem;
-  }
 }
 
 
-.form {
-  h2 {
-    font-size: $maxim-size-form;
-    margin-top: 6.3rem;
-  }
+.form__title {
+  font-size: $maxim-size-form;
+  margin-top: 6.3rem;
 }
 
-.shape {
+.form__shape {
   position: absolute;
   right: 0;
   margin-top: 6.3rem;
@@ -49,12 +42,12 @@ input, textarea {
 
 // ======== Js ========== //
 
-.red {
+.js__red {
   background-color: $fourth-background;
   border: 1px solid $border;
 }
 
-.green {
+.js__green {
   background-color: rgb(175, 214, 175);
   border: 1px solid rgb(15, 184, 105);
   padding: $medium-size;

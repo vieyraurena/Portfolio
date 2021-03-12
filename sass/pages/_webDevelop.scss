@@ -2,7 +2,7 @@
   margin-top: 6.3rem;
 }
 
-.git-container {
+.git__container {
   margin: 0;
   div {
     background-color: $click;
@@ -18,8 +18,7 @@
 
     &:hover {
       width: 500px;
-      background: $border;
-      
+      background: $border;     
     }
   }
   a {
@@ -28,7 +27,7 @@
   }
 }
 
-#git-anim {
+#js__git--anim {
   -webkit-transition-timing-function: ease;
   -moz-transition-timing-function: ease;
   -o-transition-timing-function: ease;

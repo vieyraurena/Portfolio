@@ -364,7 +364,21 @@ body {
   clear: both;
   display: table; }
 
-.nav {
+.transition {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  left: 100%;
+  z-index: 1000;
+  background-color: #FEA701;
+  transition: 0.5s ease-out; }
+
+.js__active {
+  left: 0px;
+  transition: 0.5s ease-out; }
+
+.header {
   align-items: center;
   background-color: #FFFFFF;
   justify-content: space-between;
@@ -375,16 +389,16 @@ body {
   top: 0;
   z-index: 999; }
 
-.nav-logo {
+.header__nav--logo {
   position: relative;
   left: unset;
   right: unset; }
 
-.nav-menu-items li {
+.header__nav--items li {
   display: inline-block;
   padding: 0.8rem 1.2rem; }
 
-.container-navegation {
+.design__navegation {
   flex-direction: row;
   justify-content: space-between;
   margin: 3rem 6rem;
@@ -392,15 +406,25 @@ body {
   right: 0;
   left: 0;
   z-index: 999; }
-  .container-navegation a {
+  .design__navegation a {
     color: #045a54; }
-    .container-navegation a:last-child {
+    .design__navegation a:last-child {
       text-decoration: line-through; }
 
-.scroll {
+.design__scroll {
+  flex-direction: column;
+  justify-content: flex-end; }
+
+.design__scroll--link {
   margin-top: 4rem;
   writing-mode: vertical-lr;
   scroll-behavior: smooth; }
+
+.design__scroll--decor {
+  display: flex;
+  align-items: center;
+  -webkit-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1); }
 
 .contact-background {
   background-color: #FFFFFF; }
@@ -410,14 +434,14 @@ form {
   font-size: 0.875rem;
   width: 57.77778%; }
 
-label {
+.form__label {
   flex: 1 1 100%;
   font-family: "poppins";
   text-transform: capitalize;
   color: #4F4F4F;
   padding-bottom: 0.6rem; }
 
-input, textarea {
+.form__input, .form__textarea {
   background-color: #FFFFFF;
   border: 0.1px solid #c4c4c4;
   border-radius: 0.2rem;
@@ -426,25 +450,22 @@ input, textarea {
   margin-bottom: 1rem;
   outline: none;
   padding: 0.5rem 0.5rem; }
-  input::placeholder, textarea::placeholder {
-    color: #c4c4c4;
-    font-size: 0.8rem; }
 
-.form h2 {
+.form__title {
   font-size: 2.6rem;
   margin-top: 6.3rem; }
 
-.shape {
+.form__shape {
   position: absolute;
   right: 0;
   margin-top: 6.3rem;
   z-index: -1; }
 
-.red {
+.js__red {
   background-color: #EDCCC3;
   border: 1px solid #E7928A; }
 
-.green {
+.js__green {
   background-color: #afd6af;
   border: 1px solid #0fb869;
   padding: 1.125rem;
@@ -458,63 +479,63 @@ input, textarea {
   margin-top: 160px;
   flex-direction: row; }
 
-.container-footer {
+.footer {
   align-items: center;
   flex-direction: column;
   justify-content: center;
   padding: 2.5rem 0 1rem 0; }
 
-.footer-redes-scroll {
-  justify-content: flex-end;
-  margin-right: 2rem; }
-
-.scroll-footer {
-  color: #FFFFFF;
-  writing-mode: vertical-lr; }
-
-.email {
+.footer__email {
   margin-top: 1.3rem; }
-  .email a {
+  .footer__email a {
     color: #FFFFFF;
     font-family: "montserrat";
     font-weight: lighter;
     text-transform: lowercase; }
-    .email a:hover {
+    .footer__email a:hover {
       color: #E7928A; }
 
-.footer-redes {
+.footer__redes {
   flex-direction: row;
   justify-content: space-between;
   padding-top: 1.3rem; }
-  .footer-redes ul {
+  .footer__redes ul {
     padding: 0; }
-  .footer-redes li {
+  .footer__redes li {
     align-items: center;
     justify-content: flex-end;
     display: inline-block;
     padding: 0rem 1.2rem; }
 
-.rights {
+.footer__scroll {
+  justify-content: flex-end;
+  margin-right: 2rem; }
+  .footer__scroll a {
+    color: #FFFFFF;
+    writing-mode: vertical-lr; }
+
+.footer__rights {
   font-weight: lighter;
   font-size: 0.875rem; }
 
-.green {
-  background-color: #B3D8CB;
-  width: 100%; }
+.comments__title {
+  margin-top: 6rem;
+  margin-bottom: 2.5rem; }
 
-.container-comments {
+.comments__container {
   align-items: center;
   flex-direction: row;
   justify-content: center;
   padding: 2.5rem 0rem; }
 
-.comments {
+.comments__cloud {
   margin-right: 1.85185%;
   width: 20.37037%; }
-  .comments .clound {
-    background-color: #FFFFFF;
-    border-radius: 0.8rem;
-    padding: 1.9rem; }
+
+.comments__avatar {
+  background-color: #FFFFFF;
+  border-radius: 0.8rem;
+  padding: 1.9rem; }
 
 .submit {
   align-self: flex-end;
@@ -528,83 +549,36 @@ input, textarea {
   padding: 0.6rem 1rem;
   text-transform: uppercase; }
 
-.main-content {
+.main__content {
   margin-top: 13.5rem; }
 
-.photo {
+.main__content--photo {
   width: 49.25926%;
   float: right; }
-  .photo img {
+  .main__content--photo img {
     max-width: 100%;
     width: 100%; }
 
-.redes {
+.main__content--redes {
   float: left;
   margin-right: 1.85185%;
   padding: 0 1.5rem;
   width: 2%; }
-  .redes img {
+  .main__content--redes img {
     margin-bottom: 1.3rem; }
-  .redes .line {
+  .main__content--redes .line {
     padding-left: 35%; }
 
-.content {
+.main__intro {
   margin-right: 1.85185%;
   width: 40.74074%; }
-  .content h1 {
+  .main__intro h1 {
     text-transform: uppercase;
     padding-top: 1.9rem; }
-  .content p {
+  .main__intro p {
     margin-bottom: 6.3rem; }
 
-.container-scroll {
-  flex-direction: column;
-  justify-content: flex-end; }
-
-.scroll-index {
-  margin: 4rem 6rem;
-  justify-content: flex-end;
-  scroll-behavior: smooth; }
-
-.title {
-  margin-top: 6rem;
-  margin-bottom: 2.5rem; }
-
-.main-box {
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1.3rem; }
-
-.content-box {
-  flex-direction: column;
-  padding: 0 1.3rem;
-  text-align: center;
-  width: 26.85185%; }
-  .content-box img {
-    max-width: 100%;
-    width: 100%; }
-  .content-box h3 {
-    padding: 0; }
-
-.link-decor {
-  display: flex;
-  align-items: center;
-  -webkit-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1); }
-
-.zoom {
-  transition: width 1s, height 1s, transform 1s;
-  -moz-transition: width 1s, height 1s, transform 1s;
-  -webkit-transition: width 1s, height 1s, transform 1s;
-  -o-transition: width 1s, height 1s, transform 1s; }
-  .zoom:hover {
-    transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -o-transform: scale(1.1); }
-
-.main-title {
+.design__title {
   background-image: url(../../img/circle.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -614,19 +588,36 @@ input, textarea {
   text-align: center;
   line-height: 3.2rem; }
 
-.container-bio {
+.bio {
   align-items: baseline;
   flex-flow: row nowrap;
   justify-content: flex-end;
   margin-top: 10rem;
   width: 100%; }
-  .container-bio h1 {
+  .bio h1 {
     flex: 1 1 auto; }
 
-.container-bio-conten {
+.bio__content {
   width: 60.18519%; }
 
-.list {
+.skills {
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.3rem; }
+
+.skills__box {
+  flex-direction: column;
+  padding: 0 1.3rem;
+  text-align: center;
+  width: 26.85185%; }
+  .skills__box img {
+    max-width: 100%;
+    width: 100%; }
+  .skills__box h3 {
+    padding: 0; }
+
+.skills__list {
   font-family: "montserrat";
   font-size: 1rem;
   flex-direction: column;
@@ -635,26 +626,34 @@ input, textarea {
   padding: 0px;
   text-transform: capitalize; }
 
-.shadow {
+.skills__shadow {
   border-radius: 0.5rem;
   box-shadow: 0px 0px 16px -4px #dddbdb; }
 
-.soft {
+.skills__list--soft {
   padding-bottom: 5.6rem; }
+
+.scroll-index {
+  margin: 4rem 6rem;
+  justify-content: flex-end;
+  scroll-behavior: smooth; }
+
+.projects__title {
+  margin-top: 80px; }
 
 .projects {
   justify-content: space-between;
   align-items: center; }
 
-.projects-content {
+.projects__content {
   padding-right: 200px; }
 
 .git {
   margin-top: 6.3rem; }
 
-.git-container {
+.git__container {
   margin: 0; }
-  .git-container div {
+  .git__container div {
     background-color: #045a54;
     height: 50px;
     -webkit-transition: width 1s, background 1s;
@@ -665,14 +664,14 @@ input, textarea {
     margin: 10px;
     line-height: 3.5rem;
     width: 200px; }
-    .git-container div:hover {
+    .git__container div:hover {
       width: 500px;
       background: #E7928A; }
-  .git-container a {
+  .git__container a {
     color: white;
     font-weight: bold; }
 
-#git-anim {
+#js__git--anim {
   -webkit-transition-timing-function: ease;
   -moz-transition-timing-function: ease;
   -o-transition-timing-function: ease;

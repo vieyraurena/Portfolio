@@ -9,77 +9,75 @@
   </head>
 
   <body>
+
+    <!--transition betwen-->
+    <div class="transition js__active"></div>
+
     <!--header-->
-    <div id="main" class="nav flex">
-      <div class="nav-logo">
-        <a href="index.html"><img src="img/vieiraLogo.png" alt="Sea shell logo"></a>
+    <div id="header"  class="header flex">
+      <div class="header__nav--logo">
+        <a href="#"><img src="img/vieiraLogo.png" alt="Sea shell logo"></a>
       </div>
-      <div class="nav-menu">
-        <ul class="nav-menu-items">
+      <div class="header__nav">
+        <ul class="header__nav--items">
           <li>
-            <a href="aboutMe.html">About me</a>
+            <a class="header__nav--links" href="aboutMe.html">About me</a>
           </li>
           <li>
-            <a href="webDesign.html">web design</a>
+            <a class="header__nav--links" href="webDesign.html">web design</a>
           </li>
           <li>
-            <a href="#">web developer</a>
+            <a class="header__nav--links" href="webDeveloper.html">web developer</a>
           </li>
           <li>
-            <a href="contact.html">contact</a>
+            <a class="header__nav--links" href="contact.html">contact</a>
           </li>
         </ul>
       </div>
     </div>
 
     <!--Wrapper-->
-    <div class="wrapper">
-
-      <!--main-title-->
-      <div class="main-title flex">
+    <div class="design wrapper">
+      <!--design-->
+      <div class="design__title flex">
         <h1>web developer my works</h1>
       </div>
-      <div class="container-scroll flex">
-        <a class="scroll link-decor" href="#projects">
+      <div class="design__scroll flex">
+        <a class="design__scroll--link design__scroll--decor" href="#projects">
           <span>down</span>
           <img src="img/arrow-down.png" alt="arrow right">
         </a>
       </div>
 
       <!--navegation-->
-      <div class="container-navegation flex">
+      <div class="design__navegation flex">
         <a href="index.html">home</a>
         <a href="#">web developer</a>
       </div>
     </div>
 
     <!--gitHub-->
-    <div class="wrapper git">
+    <div class="git wrapper">
       <h2>GitHub activity</h2>
-      <div class="git-container">
-        <ul class="git-list">
+      <div class="git__container">
+        <ul class="git__list">
 
         </ul>
       </div>
     </div>
 
-
-
-
-
-
     <!--footer-->
     <div class="black">
-      <div id="contact" class="container-footer flex wrapper">
+      <div id="contact" class="footer flex wrapper">
         <div>
           <a href="#">
             <img src="img/vieiraLogo.png" alt="logo de vieyra">
           </a>
         </div>
-        <div class="email">
+        <div class="footer__email">
           <a href="mailto:vieyraurenabravo@gmail.com">vieyraurenabravo@gmail.com</a>
         </div>
-        <div class="footer-redes flex tablet">
+        <div class="footer__redes flex tablet">
           <ul>
             <li><a href=""><img src="img/gitWhite.png" alt="gitHub logo"></a></li>
             <li><a href=""><img src="img/inWhite.png" alt="linked logo"></a></li>
@@ -88,19 +86,20 @@
           </ul>
         </div>
       </div>
-      
-      <div class="footer-redes-scroll flex">
-        <a class="scroll-footer" href="#">
+
+      <div class="footer__scroll flex"> 
+        <a href="#">
           <img src="img/top.svg" alt="arrow toptop">
           <span>top</span>
         </a>
       </div>
 
-      <div class="rights wrapper flex">
+      <div class="footer__rights wrapper flex">
         <span>© 2021 Vieyra Ureña Bravo</span>
       </div>
     </div>
   <script src="js/script.js"></script>
+  <script src="js/transition.js"></script>
   </body>
 
 </html>

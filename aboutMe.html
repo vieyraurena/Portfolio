@@ -9,36 +9,40 @@
   </head>
 
   <body>
+    <!--transition betwen-->
+    <div class="transition js__active"></div>
+    
     <!--header-->
-    <div id="main"  class="nav flex">
-      <div class="nav-logo">
-        <a href="index.html"><img src="img/vieiraLogo.png" alt="Sea shell logo"></a>
+    <div id="header"  class="header flex">
+      <div class="header__nav--logo">
+        <a href="#"><img src="img/vieiraLogo.png" alt="Sea shell logo"></a>
       </div>
-      <div class="nav-menu">
-        <ul class="nav-menu-items">
+      <div class="header__nav">
+        <ul class="header__nav--items">
           <li>
-            <a href="aboutMe.html">About me</a>
+            <a class="header__nav--links" href="aboutMe.html">About me</a>
           </li>
           <li>
-            <a href="webDesign.html">web design</a>
+            <a class="header__nav--links" href="webDesign.html">web design</a>
           </li>
           <li>
-            <a href="webDeveloper.html">web developer</a>
+            <a class="header__nav--links" href="webDeveloper.html">web developer</a>
           </li>
           <li>
-            <a href="contact.html">contact</a>
+            <a class="header__nav--links" href="contact.html">contact</a>
           </li>
         </ul>
       </div>
     </div>
+
     <!--Wrapper-->
-    <div class="wrapper">
-      <!--main-title-->
-      <div class="main-title flex">
+    <div class="design wrapper">
+      <!--design-->
+      <div class="design__title flex">
         <h1>vieyra ureña my bio</h1>
       </div>
-      <div class="container-scroll flex">
-        <a class="scroll link-decor" href="#bio">
+      <div class="design__scroll flex">
+        <a class="design__scroll--link design__scroll--decor" href="#bio">
           <span>down</span>
           <img src="img/arrow-down.png" alt="arrow right">
         </a>
@@ -67,15 +71,15 @@
 
       
     <!--navegation-->
-    <div class="container-navegation flex">
+    <div class="design__navegation flex">
       <a href="index.html">home</a>
       <a href="#">about me</a>
     </div>
 
     <!--bio-->
-    <div class="container-bio wrapper flex">
+    <div class="bio wrapper flex">
       <h1 id="bio">/bio</h1>
-      <div class="container-bio-conten">
+      <div class="bio__content">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores enim hic minima, consequuntur consequatur
           accusantium, omnis ea assumenda asperiores, odit eligendi veritatis sunt beatae quia iure. Tenetur deleniti
           sequi veritatis.</p>
@@ -99,13 +103,13 @@
     <div class="wrapper">
       <h2>My skills</h2>
     </div>
-    <div class="main-box wrapper flex">
-      <div class="content-box shadow">
-        <div class="images">
+    <div class="skills wrapper flex">
+      <div class="skills__box skills__shadow">
+        <div class="images skills__images">
           <img src="img/uiDesign.svg" alt="web design">
         </div>
         <h3>creative tools</h3>
-        <ul class="list">
+        <ul class="skills__list">
           <li>figma</li>
           <li>adobe ilustrador</li>
           <li>adobe photoshop</li>
@@ -113,12 +117,12 @@
           <li>invision</li>
         </ul>
       </div>
-      <div class="content-box shadow">
-        <div class="images">
+      <div class="skills__box skills__shadow">
+        <div class="images skills__images">
           <img src="img/plumeHover.svg" alt="web design">
         </div>
         <h3>development tools</h3>
-        <ul class="list flex">
+        <ul class="skills__list">
           <li>html</li>
           <li>css</li>
           <li>javascript</li>
@@ -126,12 +130,12 @@
           <li>MySQL</li>
         </ul>
       </div>
-      <div class="content-box shadow">
-        <div class="images">
+      <div class="skills__box skills__shadow">
+        <div class="images skills__images">
           <img src="img/dev.svg" alt="web design">
         </div>
         <h3>soft skills</h3>
-        <ul class="list soft">
+        <ul class="skills__list  skills__list--soft">
           <li>sprint</li>
           <li>non violent comunication</li>
         </ul>
@@ -139,51 +143,52 @@
     </div>
 
     <!--Comments-->
-    <h2 class="wrapper title">What clients says</h2>
-    <div class="green">
-      <div class="container-comments flex">
-        <!--01-->
-        <div class="comments">
-          <div class="clound">
-            <img src="img/person01.png" alt="person01">
-            <h4>Irene Hernández</h4>
-            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
-              velit mollit.</p>
-          </div>
+    <div class="comments__title wrapper">
+      <h2>What clients says</h2>
+    </div>
+
+    <div class="comments__container flex">
+      <!--01-->
+      <div class="comments__cloud skills__shadow">
+        <div class="comments__avatar">
+          <img src="img/person01.png" alt="person01">
+          <h4>Irene Hernández</h4>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+            velit mollit.</p>
         </div>
-        <!--02-->
-        <div class="comments">
-          <div class="clound">
-            <img src="img/person02.png" alt="person02">
-            <h4>Walter Picado</h4>
-            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
-              velit mollit.</p>
-          </div>
+      </div>
+      <!--02-->
+      <div class="comments__cloud skills__shadow">
+        <div class="comments__avatar">
+          <img src="img/person02.png" alt="person02">
+          <h4>Walter Picado</h4>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+            velit mollit.</p>
         </div>
-        <!--03-->
-        <div class="comments">
-          <div class="clound">
-            <img src="img/person03.png" alt="person03">
-            <h4>Manuel Villalobos</h4>
-            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
-              velit mollit.</p>
-          </div>
+      </div>
+      <!--03-->
+      <div class="comments__cloud skills__shadow">
+        <div class="comments__avatar">
+          <img src="img/person03.png" alt="person03">
+          <h4>Manuel Villalobos</h4>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+            velit mollit.</p>
         </div>
       </div>
     </div>
 
     <!--footer-->
     <div class="black">
-      <div id="contact" class="container-footer flex wrapper">
+      <div id="contact" class="footer flex wrapper">
         <div>
           <a href="#">
             <img src="img/vieiraLogo.png" alt="logo de vieyra">
           </a>
         </div>
-        <div class="email">
+        <div class="footer__email">
           <a href="mailto:vieyraurenabravo@gmail.com">vieyraurenabravo@gmail.com</a>
         </div>
-        <div class="footer-redes flex tablet">
+        <div class="footer__redes flex tablet">
           <ul>
             <li><a href=""><img src="img/gitWhite.png" alt="gitHub logo"></a></li>
             <li><a href=""><img src="img/inWhite.png" alt="linked logo"></a></li>
@@ -193,18 +198,18 @@
         </div>
       </div>
 
-      <div class="footer-redes-scroll flex"> 
-        <a class="scroll-footer" href="#">
+      <div class="footer__scroll flex"> 
+        <a href="#">
           <img src="img/top.svg" alt="arrow toptop">
           <span>top</span>
         </a>
       </div>
 
-      <div class="rights wrapper flex">
+      <div class="footer__rights wrapper flex">
         <span>© 2021 Vieyra Ureña Bravo</span>
       </div>
     </div>
-
+    <script src="js/transition.js"></script>
   </body>
 
 </html>

@@ -9,30 +9,33 @@
   </head>
 
   <body>
+    <!--transition between-->
+    <div class="transition js__active"></div>
+
     <!--header-->
-    <div id="main"  class="nav flex">
-      <div class="nav-logo">
+    <div id="header"  class="header flex">
+      <div class="header__nav--logo">
         <a href="#"><img src="img/vieiraLogo.png" alt="Sea shell logo"></a>
       </div>
-      <div class="nav-menu">
-        <ul class="nav-menu-items">
+      <div class="header__nav">
+        <ul class="header__nav--items">
           <li>
-            <a href="aboutMe.html">About me</a>
+            <a class="header__nav--links" href="aboutMe.html">About me</a>
           </li>
           <li>
-            <a href="webDesign.html">web design</a>
+            <a class="header__nav--links" href="webDesign.html">web design</a>
           </li>
           <li>
-            <a href="webDeveloper.html">web developer</a>
+            <a class="header__nav--links" href="webDeveloper.html">web developer</a>
           </li>
           <li>
-            <a href="contact.html">contact</a>
+            <a class="header__nav--links" href="contact.html">contact</a>
           </li>
         </ul>
       </div>
     </div>
     <!--Wrapper-->
-    <div class="wrapper">
+    <div class="main wrapper">
 
       <!-- <div id="menu" class="menu-collapse">
         <button id="equis" class="exit">X</button>
@@ -55,12 +58,12 @@
       </div> -->
 
       <!--main content-->
-      <div class="main-content clearfix">
+      <div class="main__content clearfix">
         <!--redes-->
-        <div class="photo">
+        <div class="main__content--photo">
           <img src="img/me.svg" alt="picture's Vieyra">
         </div>
-        <div class="redes clearfix">
+        <div class="main__content--redes clearfix">
           <img class="line" src="img/line.png" alt="">
           <a href=""><img src="img/git.png" alt="gitHub logo"></a>
           <a href=""><img src="img/IN.png" alt="linked logo"></a>
@@ -69,7 +72,7 @@
           <img class="line" src="img/line.png" alt="">
         </div>
         <!--content-->
-        <div class="content">
+        <div class="main__intro">
           <h1>hello!</h1>
           <p>Nice to meet you, I’am Vieyra Ureña. A passionate UI/UX design, graphic design & front-end Developer. I’am
             constantly observing the things, being curious always asking why and learning. I love grow personal and
@@ -88,5 +91,6 @@
         <span>next</span>
       </a>
     </div> -->
+    <script src="js/transition.js"></script>
   </body>
 </html>
