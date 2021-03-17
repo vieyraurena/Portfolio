@@ -6,3 +6,6 @@
 * Aplicar buenas prácticas en el uso de carpetas
 * Usar span en ves de br
 
+##  Incorporo nuevos cambios:
+* Elimino carpeta de breakpoints.
+* Aplico la metodología BEM en las clases.
