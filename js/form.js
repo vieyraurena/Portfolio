@@ -15,7 +15,7 @@ const formValidation = () => {
       h4.appendChild(warning); 
     } else {
       input.classList.remove('js__red');
-      check.innerHTML = 'Su formulario fue enviado';
+      check.innerHTML = 'Submitted form';
       check.classList.add('js__green');
       form.appendChild(check);
     }
