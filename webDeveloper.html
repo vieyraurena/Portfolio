@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="public/css/styles.css">
   </head>
 
-  <body>
+  <body class="onda">
 
     <!--transition betwen-->
     <div class="transition js__active"></div>
@@ -16,17 +16,20 @@
     <!--header-->
     <div id="header"  class="header flex">
       <div class="header__nav--logo">
-        <a href="#"><img src="img/vieiraLogo.png" alt="Sea shell logo"></a>
+        <a href="index.html"><img src="img/vieyLogo.svg" alt="Sea shell logo"></a>
       </div>
       <div class="header__nav">
         <ul class="header__nav--items">
+          <li>
+            <a class="header__nav--links" href="index.html">Home</a>
+          </li>
           <li>
             <a class="header__nav--links" href="aboutMe.html">About me</a>
           </li>
           <li>
             <a class="header__nav--links" href="webDesign.html">web design</a>
           </li>
-          <li>
+          <li class="header__nav--dev">
             <a class="header__nav--links" href="webDeveloper.html">web developer</a>
           </li>
           <li>
@@ -37,10 +40,10 @@
     </div>
 
     <!--Wrapper-->
-    <div class="design wrapper">
+    <div class="design wrapper strokes">
       <!--design-->
       <div class="design__title flex">
-        <h1>web developer my works</h1>
+        <h1>web developer</h1>
       </div>
       <div class="design__scroll flex">
         <a class="design__scroll--link design__scroll--decor" href="#projects">
@@ -48,11 +51,64 @@
           <img src="img/arrow-down.png" alt="arrow right">
         </a>
       </div>
+    </div>
 
-      <!--navegation-->
-      <div class="design__navegation flex">
-        <a href="index.html">home</a>
-        <a href="#">web developer</a>
+    <!--Projects-->
+    <div id="projects" class="projects__title wrapper">
+      <h2>My Projects</h2>
+    </div>
+
+    <div class="projects wrapper flex">
+      <div class="projects__content wrapper">
+        <h4>About the project</h4>
+        <p>It was a course project</p>
+        <h4>Tool used</h4>
+        <p>html | css | sass</p>
+
+        <div class="projects__content--">
+          <a class="projects__content--link" href="https://vieyraurena.github.io/bitcoin/" target= "_blank">see project</a>
+        </div>
+      </div>
+      <div class="projects__img">
+        <a href="https://vieyraurena.github.io/bitcoin/" target= "_blank">
+          <img class="projects__img--shadow zoom" src="img/bitcoin.svg" alt="projectUno">
+        </a>
+      </div>
+    </div>
+
+    <div class="projects wrapper flex">
+      <div class="projects__content wrapper">
+        <h4>About the project</h4>
+        <p>It was a course project</p>
+        <h4>Tool used</h4>
+        <p>html | css | sass</p>
+
+        <div class="projects__content--">
+          <a class="projects__content--link" href="https://vieyraurena.github.io/countries/" target= "_blank">see project</a>
+        </div>
+      </div>
+      <div class="projects__img">
+        <a href="https://vieyraurena.github.io/countries/" target= "_blank">
+          <img class="projects__img--shadow zoom" src="img/countries.svg" alt="projectUno">
+        </a>
+      </div>
+    </div>
+
+    <div class="projects wrapper flex">
+      <div class="projects__content wrapper">
+        <h4>About the project</h4>
+        <p>It was a course project</p>
+        <h4>Tool used</h4>
+        <p>html | css | sass</p>
+
+        <div class="projects__content--">
+          <a class="projects__content--link" href="https://github.com/vieyraurena/moviesProject" target= "_blank">see project</a>
+        </div>
+      </div>
+      <div class="projects__img">
+        <a href="https://github.com/vieyraurena/moviesProject" target= "_blank">
+          <img class="projects__img--shadow zoom" src="img/movies.svg" alt="projectUno">
+        </a>
       </div>
     </div>
 
@@ -69,20 +125,23 @@
     <!--footer-->
     <div class="black">
       <div id="contact" class="footer flex wrapper">
-        <div>
-          <a href="#">
-            <img src="img/vieiraLogo.png" alt="logo de vieyra">
-          </a>
-        </div>
         <div class="footer__email">
           <a href="mailto:vieyraurenabravo@gmail.com">vieyraurenabravo@gmail.com</a>
         </div>
         <div class="footer__redes flex tablet">
           <ul>
-            <li><a href=""><img src="img/gitWhite.png" alt="gitHub logo"></a></li>
-            <li><a href=""><img src="img/inWhite.png" alt="linked logo"></a></li>
-            <li><a href=""><img src="img/igWhite.png" alt="instagram logo"></a></li>
-            <li><a href=""><img src="img/beWhite.png" alt="behance logo"></a></li>
+            <li>
+              <a class="footer__redes--links" href=""><img src="img/gitWhite.png" alt="gitHub logo"></a>
+            </li>
+            <li>
+              <a class="footer__redes--links" href=""><img src="img/inWhite.png" alt="linked logo"></a>
+            </li>
+            <li>
+              <a class="footer__redes--links" href=""><img src="img/igWhite.png" alt="instagram logo"></a>
+            </li>
+            <li>
+              <a class="footer__redes--links" href=""><img src="img/beWhite.png" alt="behance logo"></a>
+            </li>
           </ul>
         </div>
       </div>

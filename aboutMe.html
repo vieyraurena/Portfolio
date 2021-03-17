@@ -8,18 +8,21 @@
     <link rel="stylesheet" href="public/css/styles.css">
   </head>
 
-  <body>
+  <body class="onda">
     <!--transition betwen-->
     <div class="transition js__active"></div>
     
     <!--header-->
     <div id="header"  class="header flex">
       <div class="header__nav--logo">
-        <a href="#"><img src="img/vieiraLogo.png" alt="Sea shell logo"></a>
+        <a href="index.html"><img src="img/vieyLogo.svg" alt="Sea shell logo"></a>
       </div>
       <div class="header__nav">
         <ul class="header__nav--items">
           <li>
+            <a class="header__nav--links" href="index.html">home</a>
+          </li>
+          <li class="header__nav--about">
             <a class="header__nav--links" href="aboutMe.html">About me</a>
           </li>
           <li>
@@ -36,10 +39,11 @@
     </div>
 
     <!--Wrapper-->
-    <div class="design wrapper">
+    <div class="design wrapper strokes">
       <!--design-->
       <div class="design__title flex">
-        <h1>vieyra ureña my bio</h1>
+        <h1>vieyra ureña</h1>
+        <span class="design__title--span">my bio</span>
       </div>
       <div class="design__scroll flex">
         <a class="design__scroll--link design__scroll--decor" href="#bio">
@@ -68,13 +72,6 @@
           </ul>
         </div>
       </div> -->
-
-      
-    <!--navegation-->
-    <div class="design__navegation flex">
-      <a href="index.html">home</a>
-      <a href="#">about me</a>
-    </div>
 
     <!--bio-->
     <div class="bio wrapper flex">
@@ -106,7 +103,7 @@
     <div class="skills wrapper flex">
       <div class="skills__box skills__shadow">
         <div class="images skills__images">
-          <img src="img/uiDesign.svg" alt="web design">
+          <img src="img/desingCheck.svg" alt="web design">
         </div>
         <h3>creative tools</h3>
         <ul class="skills__list">
@@ -117,9 +114,10 @@
           <li>invision</li>
         </ul>
       </div>
+
       <div class="skills__box skills__shadow">
         <div class="images skills__images">
-          <img src="img/plumeHover.svg" alt="web design">
+          <img src="img/devCheck.svg" alt="web design">
         </div>
         <h3>development tools</h3>
         <ul class="skills__list">
@@ -130,9 +128,10 @@
           <li>MySQL</li>
         </ul>
       </div>
+
       <div class="skills__box skills__shadow">
         <div class="images skills__images">
-          <img src="img/dev.svg" alt="web design">
+          <img src="img/Group.svg" alt="web design">
         </div>
         <h3>soft skills</h3>
         <ul class="skills__list  skills__list--soft">
@@ -147,7 +146,7 @@
       <h2>What clients says</h2>
     </div>
 
-    <div class="comments__container flex">
+    <div class="comments__container wrapper flex">
       <!--01-->
       <div class="comments__cloud skills__shadow">
         <div class="comments__avatar">
@@ -180,20 +179,23 @@
     <!--footer-->
     <div class="black">
       <div id="contact" class="footer flex wrapper">
-        <div>
-          <a href="#">
-            <img src="img/vieiraLogo.png" alt="logo de vieyra">
-          </a>
-        </div>
         <div class="footer__email">
           <a href="mailto:vieyraurenabravo@gmail.com">vieyraurenabravo@gmail.com</a>
         </div>
         <div class="footer__redes flex tablet">
           <ul>
-            <li><a href=""><img src="img/gitWhite.png" alt="gitHub logo"></a></li>
-            <li><a href=""><img src="img/inWhite.png" alt="linked logo"></a></li>
-            <li><a href=""><img src="img/igWhite.png" alt="instagram logo"></a></li>
-            <li><a href=""><img src="img/beWhite.png" alt="behance logo"></a></li>
+            <li>
+              <a class="footer__redes--links" href=""><img src="img/gitWhite.png" alt="gitHub logo"></a>
+            </li>
+            <li>
+              <a class="footer__redes--links" href=""><img src="img/inWhite.png" alt="linked logo"></a>
+            </li>
+            <li>
+              <a class="footer__redes--links" href=""><img src="img/igWhite.png" alt="instagram logo"></a>
+            </li>
+            <li>
+              <a class="footer__redes--links" href=""><img src="img/beWhite.png" alt="behance logo"></a>
+            </li>
           </ul>
         </div>
       </div>

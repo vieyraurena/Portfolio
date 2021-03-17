@@ -1,3 +1,5 @@
+/* functions */
+
 @function calculateWidth($actual) {
   $widthSize: ($actual / 1080px) * 100%;
   @return #{$widthSize};

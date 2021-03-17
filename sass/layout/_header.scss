@@ -1,6 +1,6 @@
+/* header */
 .header {
   align-items: center;
-  background-color: $main-background;
   justify-content: space-between;
   left: 0;
   padding: 0.5rem 4rem 0 4rem;
@@ -8,16 +8,18 @@
   right: 0;
   top: 0;
   z-index: 999;
-
 }
 
 .header__nav--logo {
   position: relative;
   left: unset;
   right: unset;
+  width: 4.5%;
 }
 
 .header__nav--items {
+  border-bottom: 1px solid #cccccc;
+  margin: 0;
   li {
     display: inline-block;
     padding: 0.8rem 1.2rem;

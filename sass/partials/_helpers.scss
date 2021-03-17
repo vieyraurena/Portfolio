@@ -1,3 +1,4 @@
+/* helpers */
 html {
   scroll-behavior: smooth;
 }
@@ -22,6 +23,13 @@ body {
   display: table;
 }
 
+.strokes {
+  background-image: url(../../img/burbuja.svg);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center;
+}
+
 .transition {
   position: fixed;
   top: 0;
@@ -36,4 +44,18 @@ body {
 .js__active {
   left: 0px;
   transition: 0.5s ease-out;
+}
+
+.zoom {
+  transition: width 1s, height 1s, transform 1s;
+ -moz-transition: width 1s, height 1s, transform 1s;
+ -webkit-transition: width 1s, height 1s, transform 1s;
+ -o-transition: width 1s, height 1s, transform 1s;
+
+ &:hover {
+  transform : scale(1.06);
+  -moz-transform : scale(1.06);
+  -webkit-transform : scale(1.06);
+  -o-transform : scale(1.06);
+ }
 }

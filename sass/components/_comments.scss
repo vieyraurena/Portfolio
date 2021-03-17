@@ -1,28 +1,22 @@
-// comments
-// .green {
-//   background-color: $third-background;
-//   width: 100%;
-// }
-
+/* comments */
 .comments__title {
   margin-top: 6rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .comments__container {
   align-items: center;
   flex-direction: row;
-  justify-content: center;
-  padding: 2.5rem 0rem;
+  justify-content: space-between;
 }
 
 .comments__cloud {
-  margin-right: $gutter;
-  width: calculateWidth(220px);
+  border: 2px solid #000000;
+  padding: 1.3rem 1.3rem;
+  width: calculateWidth(290px);
 }
 
 .comments__avatar {
   background-color: $main-background;
-  border-radius: 0.8rem;
   padding: 1.9rem;
 }

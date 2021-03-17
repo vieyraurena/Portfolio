@@ -1,4 +1,4 @@
-//Titles
+/* Titles */
 h1, h2, h3, h4 {
   font-family: $titles;
   text-transform: capitalize;
@@ -15,7 +15,7 @@ h2 {
 
 h3 {
   font-size: $medium-size;
-  font-weight: lighter;
+  font-weight: bold;
   letter-spacing: $letter-space-small;
   padding-left: 3rem;
 }

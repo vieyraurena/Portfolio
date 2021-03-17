@@ -1,9 +1,14 @@
+/* web developer */
 .git {
-  margin-top: 6.3rem;
+  margin-top: $maxim-size-form;
 }
 
 .git__container {
   margin: 0;
+  
+  ul {
+    padding: 0;
+  }
   div {
     background-color: $click;
     height: 50px;
@@ -12,12 +17,12 @@
     -o-transition: width 1s, background 1s;
     transition: width 1s, background 1s;
     padding: 10px;
-    margin: 10px;
+    margin: 10px 0px;
     line-height: 3.5rem;
     width: 200px;
 
     &:hover {
-      width: 500px;
+      width: 600px;
       background: $border;     
     }
   }
@@ -25,6 +30,10 @@
     color: white;
     font-weight: bold;
   }
+}
+
+.header__nav--dev {
+  border-bottom: 3px solid $main-color;
 }
 
 #js__git--anim {

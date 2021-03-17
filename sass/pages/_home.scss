@@ -1,3 +1,4 @@
+/* home */
 .main__content {
   margin-top: 13.5rem;
 }
@@ -26,6 +27,10 @@
   }
 }
 
+.main__content--links:hover, .main__content--links:focus {
+  filter: invert(67%) sepia(28%) saturate(570%) hue-rotate(317deg) brightness(91%) contrast(99%);
+}
+
 .main__intro {
   margin-right: $gutter;
   width: calculateWidth(440px);
@@ -38,6 +43,10 @@
   p {
     margin-bottom: 6.3rem;
   }
+}
+
+.header__nav--home {
+  border-bottom: 3px solid $main-color;
 }
 
 // animacion zoom en img service

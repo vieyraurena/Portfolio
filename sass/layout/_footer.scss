@@ -1,3 +1,4 @@
+/* footer */
 .black {
   background-color: $paragraf-color;
   color: $main-background;
@@ -56,4 +57,8 @@
 .footer__rights {
   font-weight: lighter;
   font-size: $small-size;
+}
+
+.footer__redes--links:hover, .footer__redes--links:focus {
+  filter: invert(67%) sepia(28%) saturate(570%) hue-rotate(317deg) brightness(91%) contrast(99%);
 }

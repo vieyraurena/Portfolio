@@ -1,34 +1,33 @@
-// Base
+/* ======= Base ======= */
 @import 'library/normalize';
 @import 'library/type.scss';
 
-
-// Utilities
+/* ======= Utilities ======= */
 @import 'utilities/functions';
 @import 'utilities/variables';
 @import 'utilities/mixin';
 
-//partials
+/* ======= partials ======= */
 @import 'partials/globals';
 @import 'partials/helpers';
 
-// Layout
+/* ======= Layout ======= */
 @import 'layout/header';
 @import 'layout/navegation';
 @import 'layout/forms.scss';
 @import 'layout/footer';
 
-// components
+/* ======= components ======= */
 @import 'components/menuCollap';
 @import 'components/comments';
 @import 'components/buttom';
 
-// Pages
+/* ======= Pages ======= */
 @import 'pages/home';
 @import 'pages/about';
 @import 'pages/webDesign';
 @import 'pages/webDevelop';
 
-// breakpoints 
+/* ======= breakpoints ======= */
 @import 'breakpoints/tablet';
 @import 'breakpoints/movil';
