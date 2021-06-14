@@ -7,15 +7,19 @@
 }
 
 .design__title {
-  background-image: url(../../img/circle.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  // background-image: url(../../img/circle.svg);
+  // background-repeat: no-repeat;
+  // background-position: center;
   justify-content: center;
-  margin-top: 8rem;
+  margin-top: 5rem;
   padding: 12.5rem 0;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   text-align: center;
-  line-height: $line-height-large;
+  line-height: $line-height-large + 2;
 }
 
 .design__title--span {

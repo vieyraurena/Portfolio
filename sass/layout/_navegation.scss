@@ -17,12 +17,12 @@
 
 .design__scroll  {
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content:center;
 }
 
 
 .design__scroll--link {
-  margin-top: 4rem;
+  // margin-top: 4rem;
   writing-mode: vertical-lr;
   scroll-behavior: smooth;
 }

@@ -360,6 +360,12 @@ ul {
 button {
   outline: none; }
 
+canvas {
+  z-index: -1;
+  width: 100%;
+  position: relative;
+  margin-bottom: 0; }
+
 /* helpers */
 html {
   scroll-behavior: smooth; }
@@ -379,12 +385,6 @@ body {
   content: "";
   clear: both;
   display: table; }
-
-.strokes {
-  background-image: url(../../img/burbuja.svg);
-  background-repeat: no-repeat;
-  background-size: 40%;
-  background-position: center; }
 
 .transition {
   position: fixed;
@@ -451,10 +451,9 @@ body {
 
 .design__scroll {
   flex-direction: column;
-  justify-content: flex-end; }
+  justify-content: center; }
 
 .design__scroll--link {
-  margin-top: 4rem;
   writing-mode: vertical-lr;
   scroll-behavior: smooth; }
 
@@ -642,15 +641,16 @@ input, textarea {
   background-size: content; }
 
 .design__title {
-  background-image: url(../../img/circle.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   justify-content: center;
-  margin-top: 8rem;
+  margin-top: 5rem;
   padding: 12.5rem 0;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   text-align: center;
-  line-height: 3.2rem; }
+  line-height: 5.2rem; }
 
 .design__title--span {
   bottom: 0;
@@ -740,9 +740,6 @@ input, textarea {
 .projects__img--shadow {
   border-radius: 10px;
   box-shadow: 0px 0px 16px -4px #888787; }
-
-.design__img {
-  width: 100%; }
 
 .header__nav--design {
   border-bottom: 3px solid #262627; }
