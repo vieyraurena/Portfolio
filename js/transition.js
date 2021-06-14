@@ -9,7 +9,6 @@ window.onload = () => {
     anchor.addEventListener('click', event => {
       event.preventDefault();
       let target = event.target.href;
-      console.log(target);
       transition.classList.add('js__active');
       
      // transition.classList.add('right');

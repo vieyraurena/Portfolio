@@ -7,7 +7,7 @@ let colorRandom = () => {
 }
 
 function sineCircleXYatAngle(cx, cy, radius, amplitude, angle, sineCount) {
-  const x = cx + (radius + amplitude * Math.sin(sineCount * angle)) * Math.cos(angle) ;
+  const x = cx + (radius + amplitude * Math.sin(sineCount * angle)) * Math.cos(angle);
   const y = cy + (radius + amplitude * Math.sin(sineCount * angle)) * Math.sin(angle);
   return ({
     x:x,

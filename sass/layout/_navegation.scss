@@ -20,7 +20,6 @@
   justify-content:center;
 }
 
-
 .design__scroll--link {
   // margin-top: 4rem;
   writing-mode: vertical-lr;
@@ -28,6 +27,7 @@
 }
 
 .design__scroll--decor {
+  margin-top: -15rem;
   display: flex;
   align-items: center;
   -webkit-transition: all .5s cubic-bezier(.77,0,.175,1);

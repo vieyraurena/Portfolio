@@ -2,7 +2,7 @@ import { getContext,colorRandom, sineCircleXYatAngle} from './util.js';
 
 const cx = canvas.width / 2;
 const cy = canvas.height / 2;
-const radius = 110;
+const radius = 90;
 
 const color = `rgb(${colorRandom()}, ${colorRandom()}, ${colorRandom()})`;
 
@@ -13,7 +13,7 @@ class draw {
     this.angle = angle;
   }
 
-  drawWave(){
+  drawBubble(){
     const ctx = getContext();
     ctx.clearRect(0, 0, canvas.width, canvas.height);
    
