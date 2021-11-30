@@ -1,92 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>VieyraU</title>
     <link rel="stylesheet" href="public/css/styles.css">
   </head>
-
   <body>
-    <!--header-->
-    <div id="main"  class="nav flex">
-      <div class="nav-logo">
-        <a href="#"><img src="img/vieiraLogo.png" alt="Sea shell logo"></a>
-      </div>
-      <div class="nav-menu">
-        <ul class="nav-menu-items">
-          <li>
-            <a href="aboutMe.html">About me</a>
-          </li>
-          <li>
-            <a href="webDesign.html">web design</a>
-          </li>
-          <li>
-            <a href="webDeveloper.html">web developer</a>
-          </li>
-          <li>
-            <a href="contact.html">contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!--Wrapper-->
-    <div class="wrapper">
+    <div class="transition js__active"></div>
 
-      <!-- <div id="menu" class="menu-collapse">
-        <button id="equis" class="exit">X</button>
-        <div class="content-menu flex">
-          <ul>
-            <li>
-              <a href="aboutMe.html">About me</a>
+    <div class="container">
+      <header class="header">
+        <img src="img/logo.svg" alt="logo's VieyraU">
+        <button class="header__hamburger hidden"></button>
+  
+        <nav class="header__nav">
+          <ul class="header__nav--items">
+            <li class="header__nav--home">
+              <a class="header__nav--links" href="#">Home</a>
             </li>
             <li>
-              <a href="">web design</a>
+              <a class="header__nav--links" href="./myBio/index.html">My Bio</a>
             </li>
             <li>
-              <a href="">web developer</a>
+              <a class="header__nav--links" href="./myProjects/index.html">My Projects</a>
             </li>
             <li>
-              <a href="#contact">contact</a>
+              <a href="./contact/index.html" class="header__nav--links">contact</a>
+            </li>
+          </ul>
+          <span class="slide"></span>
+        </nav>
+      </header>
+  
+      <!--MENU-->
+      <div class="menu js-menu">
+        <div class="menu__close-button">
+          <div class="leftright"></div>
+          <div class="rightleft"></div>
+          <label class="menu__close">close</label>
+        </div>
+  
+        <div class="menu__container">  
+          <ul class="js__menu--items">
+            <li>
+              <a href="index.html" class="menu__link">Home</a>
+            </li>
+            <li>
+              <a href="./myBio/index.html" class="menu__link">My Bio</a>
+            </li>
+            <li>
+              <a href="./myProjects/index.html" class="menu__link">My Projects</a>
+            </li>
+            <li>
+              <a href="./contact/index.html" class="menu__link">Contact</a>
             </li>
           </ul>
         </div>
-      </div> -->
-
-      <!--main content-->
-      <div class="main-content clearfix">
-        <!--redes-->
-        <div class="photo">
-          <img src="img/me.svg" alt="picture's Vieyra">
-        </div>
-        <div class="redes clearfix">
-          <img class="line" src="img/line.png" alt="">
-          <a href=""><img src="img/git.png" alt="gitHub logo"></a>
-          <a href=""><img src="img/IN.png" alt="linked logo"></a>
-          <a href=""><img src="img/Ig.png" alt="instagram logo"></a>
-          <a href=""><img src="img/BE.png" alt="behance logo"></a>
-          <img class="line" src="img/line.png" alt="">
-        </div>
-        <!--content-->
-        <div class="content">
-          <h1>hello!</h1>
-          <p>Nice to meet you, I’am Vieyra Ureña. A passionate UI/UX design, graphic design & front-end Developer. I’am
+        <span class="menu__name">VieyraUreñaBravo</span>
+      </div>
+  
+      <main class="wrapper main__container">
+        <img class="main__img" src="img/me.png" alt="">
+        <div class="main__content">
+          <h1>HELLO!!<span>&#160;</span></h1>
+          <p>Nice to meet you, <b>I’am Vieyra Ureña.</b> A passionate <b>UI/UX</b> design,<b>graphic design & front-end Developer</b>. I’am
             constantly observing the things, being curious always asking why and learning. I love grow personal and
             professionally.
           </p>
-          <a href="aboutMe.html"> 
-            <span>Read more About me</span>
-            <img src="img/arrow-right.png" alt="arrow right">
-          </a>
+          <a href="./myBio/index.html" class="main__link">Read my Bio</a>
         </div>
-      </div>
+  
+        <div class="social">
+          <div class="social__container">
+            <div class="line"></div>
+            <div class="social__links">
+              <a href="https://www.linkedin.com/in/vieyraurenabravo/" target="_blank"class="social__links--box">
+                <img src="img/linkedin.svg" alt="link to vieyra's linkedin">
+              </a>
+              <a href="https://github.com/vieyraurena" target="_blank" class="social__links--box">
+                <img src="img/github.svg" alt="link to vieyra's github">
+              </a>
+              <a href="" class="social__links--box">
+                <img src="img/behance.svg" alt="link to vieyra's behance">
+              </a>
+            </div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </main>
+  
+      <footer class="footer__home">
+        <div class="footer__container">
+          <div class="line line90"></div>
+          <div class="footer__links">
+            <a href="https://www.linkedin.com/in/vieyraurenabravo/" target="_blank">
+              <img class="footer__links--box" src="img/linkedin.svg" alt="">
+            </a>
+            <a href="https://github.com/vieyraurena" target="_blank">
+              <img src="img/github.svg" alt="" class="footer__links--box">
+            </a>
+            <a href="">
+              <img src="img/behance.svg" alt="" class="footer__links--box">
+            </a>
+          </div>
+          <div class="line line90"></div>
+        </div>
+        <span>© 2021 VieyraUreñaBravo</span>
+      </footer>
     </div>
-    <!--navegation-->
-    <!-- <div class="scroll-index flex">
-      <a href="aboutMe.html">
-        <span>next</span>
-      </a>
-    </div> -->
+    
+
+    <script src="js/script.js" type="module"></script>
   </body>
-</html>
+</html

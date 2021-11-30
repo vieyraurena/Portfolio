@@ -1,23 +1,31 @@
-// comments
-.green {
-  background-color: $third-background;
-  width: 100%;
-}
-
-
-.container-comments {
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-  padding: 2.5rem 0rem;
-}
-
 .comments {
-  margin-right: $gutter;
-  width: calculateWidth(220px);
-  .clound {
-    background-color: $main-background;
-    border-radius: 0.8rem;
-    padding: 1.9rem;
+  display: flex;
+  font-family: $secondary-font;
+  flex-direction: column;
+  margin-bottom: 7.2rem;
+  
+  @media (min-width: 48rem) {
+    flex-direction: row;
+    justify-content: space-between;
   }
+} 
+
+.comments__comment {
+  display: flex;
+  margin-bottom: $large-size;
+
+  p {
+    line-height: $line-height-medium + 1;
+  }
+  
+  @media (min-width: 76.8rem) {
+    margin-right: $large-size;
+  }
+}
+
+
+.comments_span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-right: 0.8rem;
 }

@@ -1,34 +1,18 @@
-// Base
-@import 'library/normalize';
-@import 'library/type.scss';
+/* ======= Utilities ======= */
+@import 'settings/variables';
+@import 'settings/type';
+@import 'settings/helpears';
+@import 'settings/globals';
 
-
-// Utilities
-@import 'utilities/functions';
-@import 'utilities/variables';
-@import 'utilities/mixin';
-
-//partials
-@import 'partials/globals';
-@import 'partials/helpers';
-
-// Layout
-@import 'layout/header';
-@import 'layout/navegation';
-@import 'layout/forms.scss';
-@import 'layout/footer';
-
-// components
-@import 'components/menuCollap';
+/* ======= components ======= */
+@import 'components/header';
+@import 'components/menu';
+@import 'components/footer';
 @import 'components/comments';
-@import 'components/buttom';
+@import 'components/tags';
 
-// Pages
+/* ======= Pages ======= */
 @import 'pages/home';
-@import 'pages/about';
-@import 'pages/webDesign';
-@import 'pages/webDevelop';
-
-// breakpoints 
-@import 'breakpoints/tablet';
-@import 'breakpoints/movil';
+@import 'pages/contact';
+@import 'pages/myBio';
+@import 'pages/myProjects';

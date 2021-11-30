@@ -1,46 +1,25 @@
-//
-// JS2 Project template.
-// //
+import nav from './modules/nav.js';
+import menu from './modules/menu.js';
 
-// const link = document.getElementById('link');
-// const collapse = document.getElementById('menu');
-// const equis = document.getElementById('equis');
-// console.log('hi')
+window.onload = () => {
+  const transition = document.querySelector(".transition");
+  const links = document.querySelectorAll('.header__nav--links');
 
-// link.addEventListener('click', (event) => {
-//   event.preventDefault();
-//   collapse.classList.add('visible');
-// });
+  transition.classList.remove("js__active");
 
-// equis.addEventListener('click', (event) => {
-//   event.preventDefault();
-//   collapse.classList.remove('visible');
-// });
-const URL = "https://api.github.com/users/vieyraurena/repos?per_page=10"
-const list = document.querySelector('.git-list');
+  links.forEach((anchor) => {
+    anchor.addEventListener('click', event => {
+      event.preventDefault();
+      let target = event.target.href;
+      transition.classList.add('js__active');
+      
+      setTimeout(() => {
+        window.location.href = target;
 
-const listRepos = (element) => {
-  element.forEach((repo) => {
-    const content = `
-      <div id="git-anim">
-        <li><a href="${repo.html_url}" target="_blank">${repo.name}</a></li>
-      </div>
-      `;
-    list.innerHTML += content;
-    // content.classList.add('#js')
-  });
- 
+        }, 500);
+      })
+  })
 }
 
-fetch(URL, {
-  method: "GET"
-})
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    listRepos(data);
-  })
-  .catch((err) => {
-    console.error(err);
-  });
+nav();
+menu();
